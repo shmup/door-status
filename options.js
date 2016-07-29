@@ -17,6 +17,7 @@ function save_options() {
 // stored in chrome.storage.
 function restore_options() {
   chrome.storage.sync.get({
+	// TODO - remove this default url so we can put on chrome store
     requestUrl: 'http://192.168.201.44'
   }, function(items) {
 	debugger;
