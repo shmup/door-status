@@ -38,6 +38,7 @@ function pollServer() {
                 setIcon(status);
                 setTitle(status + ' for at least ' + timer + ' seconds');
             } else {
+                timer = 0;
                 setError(url);
             }
         }
