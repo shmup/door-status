@@ -36,7 +36,7 @@ function pollServer() {
                 last_status = status;
 
                 setIcon(status);
-                setTitle(status + ' for at least ' + Math.floor(timer / 60) + ' minutes ' + (timer % 60) + ' seconds');
+                setTitle(status + ' for at least ' + Math.floor(timer / 60) + ' min ' + (timer % 60) + ' sec');
             } else {
                 timer = 0;
                 setError(url);
